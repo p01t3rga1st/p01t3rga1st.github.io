@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url("fonts/Fira_Code/FiraCode-VariableFont_wght.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.banner{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.80)), url(background.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    width: 150px ;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style-position: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    font-family: FiraCode;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::before{
+    content: '-> ';
+    color: cornflowerblue;
+}
+
+
+.content{
+
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    transform: translateX(150px);
+
+}
+  
+.content h1{
+
+    margin-top: 0px;
+
+}
+
+.content p1{
+
+    font-family: "FiraCode";
+    font-weight: 100;
+    line-height: 25px;
+    color: whitesmoke
+}
+
