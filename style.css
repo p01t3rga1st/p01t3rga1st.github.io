@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Roboto;
-    zoom: 105%;
+    zoom: 100%;
     
     
 }
@@ -20,7 +20,7 @@
 .banner{
     margin-top: -35px;
     width:100%;
-    height: 100vh;
+    height: 110vh;
     background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.8)), url(background.jpg) ; 
     background-size: cover;
     position: absolute;
