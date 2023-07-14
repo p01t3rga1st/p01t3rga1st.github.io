@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Roboto;
-    zoom: 102%;
+    zoom: 108%;
+    
 }
 
 @font-face {
@@ -16,11 +17,13 @@
 }
 
 .banner{
+    margin-top: -35px;
     width:100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.80)), url(background.jpg) ; 
+    background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.8)), url(background.jpg) ; 
     background-size: cover;
     position: absolute;
+    
 }
 
 .navbar{
@@ -33,13 +36,15 @@
 
 }
 .logo{
-    width: 150px ;
+    width: 120px ;
     cursor: pointer;
+    margin-left: -80px;
 }
 .navbar ul li{
     list-style-position: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
+    
 }
 
 .navbar ul li a{
@@ -64,11 +69,12 @@
 .content {
 
     width: 90%;
-    position: absolute;
-    text-align: center;
+    position: relative;
     color: #fff;
-    overflow: hidden;
-    margin:center;
+    margin-top: 100px;
+    padding-left: 10%;
+    
+    
     
 
 }
@@ -76,6 +82,8 @@
 .content h1 {
     color:#fff;
     font-family: Roboto;
+    padding-left: 0%;
+    text-align: center;
 }
 
 .content p {
@@ -83,6 +91,8 @@
     font-weight: 100;
     line-height: 20px;
     color: whitesmoke;
+    text-align: center;
+    
 }
 
 
@@ -147,4 +157,54 @@
     width: 100%;
     position: fixed;
     z-index: 100;
+    margin-top: -100px;
 }
+
+
+.body_anim {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+
+
