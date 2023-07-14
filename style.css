@@ -210,3 +210,9 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
